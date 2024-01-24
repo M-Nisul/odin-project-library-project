@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User | LibraryU</title>
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div id="logo"><img src="./assets/favicon.svg" alt="favicon"><h1>LibraryU</h1></div>
+        <form action method id="new">
+            <div class="input"><input type="text" id="title" required maxlength="120" title="Enter The Book's Title"><label for="title">Title</label></div>
+            <div class="input"><input type="text" id="author" required maxlength="120" title="Enter The Book's Author"><label for="author">Author</label></div>
+            <div class="input"><input type="number" id="pages" required max="1000" title="Enter How Many Pages The Book Has"><label for="pages">Pages</label></div>
+            <label for="status" id="status-label" required>Status: </label>
+            <select name="status" id="status">
+                <option value="Not-Read">Not Read</option>
+                <option value="Read">Read</option>
+                <option value="Currently-Reading">Currently Reading</option>
+            </select>
+            <button type="submit" id="submit">Add Book</button>
+        </form>
+        <div id="books">
+        </div>
+    </div>
+</body>
+</html>
